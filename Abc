@@ -1,0 +1,32 @@
+package songuyento;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Thien
+ */
+public class DemSoNguyenToNhoHonN {
+
+    int demNguyenToNhoHonN(int n){
+        //Dem so nguyen to nho hon N
+        int dem=0;
+        for(int i=2;i<n;i++){
+            int soNguyenTo=0;
+            for(int j=1;j<i;j++){
+                if(i%j==0) soNguyenTo++; 
+            }
+            if(soNguyenTo==2) dem++;
+        }
+        return dem;
+    }
+    public static void main(String[] args) {
+        DemSoNguyenToNhoHonN a = new DemSoNguyenToNhoHonN();
+        int N;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Nhap N: ");
+        N=scan.nextInt();
+        System.out.println("Co "+a.demNguyenToNhoHonN(N)+" so nguyen to be hon "+N);
+    }
+    
+}
