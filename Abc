@@ -3,8 +3,8 @@ package songuyento;
 import java.util.Scanner;
 
 /**
- *
- * @author Thien
+ * Create day: 10-5-2020
+ * @author Phan Si Thien
  */
 public class DemSoNguyenToNhoHonN {
 
